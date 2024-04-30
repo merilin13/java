@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Merilin Hiis<br>
+    2024-04-30<br>
+    <h2>Sõidu aeg ja kaugus</h2>
+    <p>
+        Õpilane tahab teada, kui kaua võtab aega teatud kauguse läbimine kindla 
+        kiirusega. Kasuta muutujaid sõidu kauguse (kilomeetrites) ja kiiruse 
+        (kilomeetrites tunnis) hoidmiseks. Arvuta ja kuva konsooli sõidu aeg (tundides).
+    </p>
+    <script>
+        let kaugus = parseInt(prompt("Sisesta kaugus kilomeetrites täisarvuna"))
+        let kiirus = parseInt(prompt("sisesta kiirus km/h täisarvuna"))
+        document.write("Kaugus: ", (kaugus), "km <br>")
+        document.write("Kiirus: ", (kiirus), "km/h <br>")
+        document.write(`Sõidule kuluv aeg: ${kaugus / kiirus} tundi`)
+    </script>
+
+    
+        <h2>Postituste kuvamine</h2>
+        <p>Andmebaasis on 137 postitust ning soovime neid kuvada veebilehel. Iga lehekülg kuvab 
+            maksimaalselt 10 postitust. Sinu ülesanne on arvutada, mitu lehekülge on vaja postituste 
+            kuvamiseks ning mitu postitust on viimasel lehel.</p>
+    <script>
+        let postnum = 137
+        let maxpostlk = 10
+        document.write("postitusi on ",(postnum), "<br>")
+        document.write("maksimum pasitusi lehel on  on ",(maxpostlk), "<br>")
+        document.write(`lehekülgi on:  ${parseInt(postnum / maxpostlk)}`)
+        document.write()
+    </script>
+</body>
+</html>
