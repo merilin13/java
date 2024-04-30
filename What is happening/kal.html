@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>kalkulator</title>
+</head>
+<body>
+    <script>
+        document.write("<h2>ujukoma võrdlus</h2> <br>")
+        let result  = 0.1 + 0.2
+        const correct = 0.3
+        const precision = 0.001
+        document.write(result - 0.3 <= 0.001)
+        document.write(`${result} -${correct}<= ${precision} | ${result - correct <= precision}`)
+    </script>
+
+    <script>
+        document.write("<h2><br>omaistamis operatoriid</h2> <br>")
+        let i = 3
+        document.write(`i =3;i++ | ${i++}<br>`)
+        document.write(`i | ${i}<br>`)
+        document.write(`++i | ${++i}<br>`)
+        document.write(`i | $ {i}<br>`)
+    </script>
+
+    <script>
+        document.write(`<h2>veateated</h2> <br>`)
+        let division = 5/0
+        document.write(`5 / 0 = ${division}<br>`)
+        let notanumber = 38 - "kümme"
+        document.write(`38 - "kümme" = ${notanumber}<br>`)
+    </script>
+
+    <script>
+        document.write(`<h2>Teisendamine</h2> <br>`)
+        let number = 42 
+        document.write(`number.toString() = ${number.toString()} <br>`)
+        document.write(`String(number) = ${String(number)}<br>`)
+        document.write(`number= ${number}<br>`)
+        let text = "123neliviiskuus"
+        document.write(`parseInt(text)= ${parseInt(text)} | typeof parseInt(text)= ${typeof parseInt(text)}<br>`)
+        document.write(`Number(text)= ${ Number(text)}| typeof Number(text)= ${typeof Number(text)}<br>`)
+    </script>
+</body>
+</html>
